@@ -1,0 +1,91 @@
+<!-- Cette liste est exhaustive, c’est un
+tableau html qui possède pour chaque élément des informations comme le
+nom de l’objet, une image miniature, une catégorie, une description et un
+lien vers un site qui vend l’article question...
+Dans cette liste il faut créer 4 classes CSS afin de repérer facilement : les
+objets ayant déjà été achetés, ayant été sélectionnés par des amis, urgents
+et normaux.
+En bas de la liste il doit y avoir un lien qui mène vers un formulaire simulant
+l’ajout d’objets à la liste. Ce formulaire doit contenir l’ensemble des
+informations présentes dans la liste. La validation du formulaire renvoie
+vers la liste.
+Les deux pages doivent utiliser le même css. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="liste.css" />
+    <title>Formulaire</title>
+  </head>
+  <body class="container2">
+    <header id="top">
+      <h1 class="title">Liste de naissance de Sasha</h1>
+      <p>
+        Tous nos essentiels et coups de coeur pour les mois à venir y sont
+        rassemblés. Nous vous remercions pour toutes ces attentions. <br />
+        <strong>
+          « Avant j'étais dans le ventre de ma maman et cela me suffisait
+          amplement. Maintenant que je suis arrivé(e) parmi vous, j'ai besoin de
+          beaucoup de choses d'après ce que disent mes parents</strong
+        >
+        !
+      </p>
+    </header>
+
+    <main>
+      <form class="form" action="get">
+
+        <legend class="infos" >Infos perso
+        <label for="lname"></label>
+        <input type="text" name="lname" id="lname" placeholder="Votre Nom" />
+        
+        <label for="fname"></label>
+        <input type="text" name="fname" id="fname" placeholder="Votre prénom" />
+
+        <label for="phone"></label>
+        <input type="tel" name="phone" id="phone" placeholder="06 xx xx xx xx " />
+    </legend>
+
+    <legend class="choice" > Votre choix
+        <label for="pbv">Porte bébé ventral</label>
+        <input type="checkbox" id="pbv" name="Porte_bébé_ventral" value="Porte_bébé">
+
+        <label for="Poussette">Poussette</label>
+        <input type="checkbox" id="poussette" name="poussette" value="poussette">
+        
+        <label for="siege">Siège auto</label>
+        <input type="checkbox" id="siege" name="siege_auto" value="siege_auto">
+
+        <label for="ce">Couverture Enveloppante</label>
+        <input type="checkbox" id="ce" name="couverture_enveloppante" value="couverture_enveloppante">
+        
+        <label for="lit">Lit à barreaux</label>
+        <input type="checkbox" id="lit" name="lit" value="lit">
+        
+        <label for="mat"></label>Matelas<br>
+        <input type="checkbox" id="mat" name="matelas" value="matelas">
+        
+        <label for="lb">Lot de Biberons</label>
+        <input type="checkbox" id="lb" name="lot_biberons" value="lot_biberons">
+        
+        <label for="cb">Chauffe biberons</label>
+        <input type="checkbox" id="cb" name="chauffe biberons" value="chauffe_biberons">
+        
+        <label for="bd">Lot de 2 Body</label>
+        <input type="checkbox" id="bd" name="body" value="body">
+        
+        <label for="ce">Gigoteuse</label>
+        <input type="checkbox" id="gig" name="gigoteuse" value="gigoteuse">
+        </legend>  
+        <a class="button" href="liste.html">Ajouter à ma liste</a> 
+      </form>
+      
+    </main>
+
+    <footer class="bot">
+      <aside>Copyright © Pierre Lebret</aside>
+    </footer>
+  </body>
+</html>

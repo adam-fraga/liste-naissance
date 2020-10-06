@@ -1,0 +1,282 @@
+/* CONTAINER PAGE1  */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background: center center fixed url(img/light-blue-texture-abstract-wallpaper-215519085.jpg); */
+  background: black;
+  background-size: cover;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* CONTAINER PAGE2 */
+.container2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: no-repeat center center fixed url(img/Babypics\ B&W.jpg);
+  background-size: cover;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+#top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  margin: 0 0 50px 0;
+  background-size: cover;
+}
+
+#top p {
+  word-break: break-word;
+  width: 800px;
+  border: 5px solid white;
+  border-style: double;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.726);
+  box-shadow: 10px 10px 30px white;
+}
+/* H1 */
+#top .title {
+  background-color: rgba(255, 255, 255, 0.726);
+  text-align: center;
+  border: 5px solid white;
+  border-style: double;
+  padding: 20px;
+
+  color: white;
+  text-shadow: 5px 5px 10px rgb(2, 9, 10);
+  text-shadow: 1px 1px 2px black;
+  box-shadow: 10px 10px 30px white;
+}
+/* HEADER Paragraphe */
+#top p {
+  color: white;
+  text-shadow: 5px 5px 10px rgb(2, 9, 10);
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+  font-size: large;
+  padding: 15px;
+}
+/* TABLEAU */
+#tableau {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 1200px;
+  border-collapse: collapse;
+  margin: auto;
+  box-shadow: 10px 10px 30px white;
+  background: rgba(255, 255, 255, 0.6);
+  border: 5px solid white;
+  border-style: double;
+}
+
+.color_head {
+  background: white;
+  height: 20px;
+  font-weight: bold;
+  width: 200px;
+}
+
+td {
+  height: 100px;
+  border: 1px solid white;
+  border-style: ridge;
+}
+
+th {
+  background-color: white;
+}
+.seller {
+  background-color: rgba(250, 128, 114, 0.247);
+}
+.seller a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 5px 5px 10px rgb(2, 9, 10);
+  text-shadow: 1px 1px 2px black;
+}
+.seller a:hover {
+  font-size: larger;
+  color: rgb(255, 132, 245);
+  transition: 1s;
+}
+.product {
+  color: white;
+  text-shadow: 5px 5px 10px rgb(2, 9, 10);
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+  font-size: larger;
+  background: rgba(255, 255, 0, 0.164);
+}
+.cat {
+  color: white;
+  text-shadow: 5px 5px 10px rgb(2, 9, 10);
+  text-shadow: 1px 1px 2px black;
+  background: rgba(253, 172, 246, 0.171);
+}
+.description {
+  padding: 20px;
+  color: white;
+  text-shadow: 5px 5px 10px rgb(2, 9, 10);
+  text-shadow: 1px 1px 2px black;
+  width: 800px;
+}
+
+/* LIEN VERS PAGE FORM */
+.lien {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+}
+.lien a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 1px 2px black;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 100px;
+  padding: 10px;
+  background-color: rgb(106, 201, 94);
+  opacity: 0.6;
+}
+.lien a:hover {
+  color: white(106, 201, 94);
+  text-shadow: 2px 1px 2px black;
+  transition: 1s;
+  opacity: 1;
+  text-shadow: 5px 5px 20px white;
+}
+
+/* URGENT NORMAL */
+.urgent {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+
+.bot{
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.726);
+  margin-bottom: 0;
+  height: 40px;
+  border-top: 5px solid white;
+  border-style: double;
+  margin: 75px 0 0 0;
+}
+
+
+/* BOUTTON */
+.dispo {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: 8px;
+  font-weight: bold;
+}
+.dispo:hover {
+  background: rgb(106, 201, 94);
+  color: rgb(255, 255, 255);
+  transition: 1s;
+}
+
+.offert {
+  font-weight: bold;
+  color: red;
+}
+
+/* IMAGE*/
+
+.img {
+  background-color: white;
+}
+.img img {
+  width: 150px;
+}
+ /* -----------------FORMULAIRE HTML------------------ */
+
+ .form{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.726);
+  border: 5px solid white;
+  border-style: double;
+  width: 500px;
+  height: 870px;
+  margin: auto;
+  color: white;
+  box-shadow: 10px 10px 30px white;
+}
+  
+  .infos{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    border: 5px solid white;
+    padding: 15px;
+    border-style: double;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.342);
+  }
+  .infos input{
+  width: 200px;
+  margin: 5px auto;
+  text-align: center;
+  }
+
+.choice{
+  display: flex;
+  width: 400px;
+  height: 800px;
+  flex-direction: column;
+  align-items:center;
+  margin: 20px auto;
+  border: 5px solid white;
+  border-style: double;
+  background-color: rgba(0, 0, 0, 0.342);
+ 
+
+}
+.choice input{
+  margin-bottom: 10px;
+}
+
+.choice label{
+  padding-top: 10px;
+  margin:0;
+}
+
+.button{
+  text-decoration: none;
+  text-align: center;
+  width: 170px;
+  background-color: white;
+  opacity: .5;
+  margin:20px auto;
+  padding: 10px;
+  height: 20px;
+  border-radius: 50px;
+font-weight: bold;
+color: black ;
+border 2px bloack solid;
+}
+.button:hover{
+opacity: 1;
+border: 2px white solid;
+text-shadow: 5px 5px 20px rgb;
+background: rgb(106, 201, 94);
+transition:1s;
+
+}

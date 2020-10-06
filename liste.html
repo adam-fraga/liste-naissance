@@ -1,0 +1,130 @@
+<!-- Cette liste est exhaustive, c’est un
+tableau html qui possède pour chaque élément des informations comme le
+nom de l’objet, une image miniature, une catégorie, une description et un
+lien vers un site qui vend l’article question...
+Dans cette liste il faut créer 4 classes CSS afin de repérer facilement : les
+objets ayant déjà été achetés, ayant été sélectionnés par des amis, urgents
+et normaux.
+En bas de la liste il doit y avoir un lien qui mène vers un formulaire simulant
+l’ajout d’objets à la liste. Ce formulaire doit contenir l’ensemble des
+informations présentes dans la liste. La validation du formulaire renvoie
+vers la liste.
+Les deux pages doivent utiliser le même css. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="liste.css" />
+    <title>Liste</title>
+  </head>
+  <body class="container" >
+    <header id="top">
+      <h1 class="title" >Liste de naissance de Sasha</h1>
+      <p>Tous nos essentiels et coups de coeur pour les mois à venir y sont rassemblés. Nous vous remercions pour toutes ces attentions. <br> <strong> « Avant j'étais dans le ventre de ma maman et cela me suffisait amplement. Maintenant que je suis arrivé(e) parmi vous, j'ai besoin de beaucoup de choses d'après ce que disent mes parents</strong> !</p>
+    </header>
+
+    <main>
+      <!-- TABLEAU HEAD -->
+    <table id="tableau" >
+      <th>
+        <td class="color_head">Produit</td>
+        <td class="color_head" >Catégorie</td>
+        <td class="color_head" >Description </td>
+        <td class="color_head" >Site revendeur</td>
+        <td class="color_head" >Disponibilité</td>
+      </th>
+<!-- POUR SES DEPLACEMENTS -->
+        <tr class="balade" >
+          <td class="img" ><img src="img/porte bébé ventral.jpg" alt="Porte bébé"></td>
+          <td class="product" >Porte bébé ventral</td>
+          <td class="cat" rowspan="2">Pour ses balades</td>
+          <td class="description" >Le porte-bébé Hip Seat est composé de deux éléments - une base rigide et un porte-bébé - qui peuvent être utilisés ensemble ou séparément pour donner vie à 3 produits différents et à de multiples options de portage.</td>
+          <td class="seller" ><a href="https://www.allobebe.fr/porte-bebe-hip-seat-denim-aCH046125425.html" target="_blank" rel="noopener noreferrer">Allobébé</a></td>
+          <td><button class="dispo urgent"  type="submit" >Dispo</button></td>
+        </tr>
+
+        <tr class="balade" >
+          <td class="img"><img src="img/poussette.jpg" alt=""></td>
+          <td class="product" >Poussette</td>
+          <td class="description" >Partez à l'aventure en toute sérénité grâce à la nouvelle poussette tout-terrain Nova. Cette poussette 3 roues possède un système de pliage unique automatique, plus besoin de vos mains !</td>
+          <td class="seller" ><a href="https://www.allobebe.fr/poussette-3-roues-nova-essential-graphite-aBC041416854.html" target="_blank" rel="noopener noreferrer">Allobébé</a></td>
+          <td  class="offert urgent" >Déja Offert!</td>
+        </tr>
+        <!-- En voiture -->
+        <tr class="voiture">
+          <td class="img" ><img src="img/siège auto.jpg" alt="Siège auto"></td>
+          <td class="product" >Siege auto</td>
+          <td class="cat" rowspan="2">En voiture</td>
+          <td class="description" >Le meilleur compagnon de voyage des premiers jours jusqu'à 10 ans. !</td>
+          <td class="seller"><a href="https://www.allobebe.fr/siege-auto-seat-4-fix-octane-groupe-0123-aCH032128174.html" target="_blank" rel="noopener noreferrer">Allobébé</a></td>
+          <td><button class="dispo urgent" type="submit" >Dispo</button></td>
+        </tr>
+
+        <tr class="voiture">
+          <td class="img" ><img src="img/couverture env.jpg" alt="Couverture enveloppante"></td>
+          <td class="product" >Couverture enveloppante pour siège auto</td>
+          <td class="description" >Zamboo - Couverture enveloppante pour siège auto par ex. Bébé Confort, Cybex, Kiddy) - Nid d’ange cosy rembourré et douillet pour cosy et nacelle en polaire thermique - Gris</td>
+          <td class="seller" ><a href="http://https://www.amazon.fr/Zamboo-Couverture-enveloppante-rembourr%C3%A9-thermique/dp/B08HM5KXDD/ref=sr_1_1_sspa?dchild=1&keywords=Couverture+Enveloppante+B%C3%A9b%C3%A9&qid=1601921392&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFMQVpNTDFaOVhBQU0mZW5jcnlwdGVkSWQ9QTEwMjcxODkzVU5ESVY2NTJOTDE3JmVuY3J5cHRlZEFkSWQ9QTAwNzUzMDRGVkJBWDA3UkM4OUEmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl" target="_blank" rel="noopener noreferrer">Amazon</a></td>
+          <td><button class="dispo normal" type="submit" >Dispo</button></td>
+        </tr>
+        <!-- CHAMBRE -->
+        <tr class="chambre" >
+          <td class="img" ><img src="img/Lit à barreaux.jpg" alt="Lit à barreaux"></td>
+          <td class="product" >Lit à barreaux</td>
+          <td class="cat" rowspan="2" >Pour sa chambre</td>
+          <td class="description" >Jusqu'à ses 3 ans environ, Bébé pourra dormir dans son lit à barreaux 70x140 cm, puis il vous suffira d'utiliser les éléments de transformation pour lui offrir un lit de grand.</td>
+          <td class="seller" ><a href="http://https://www.allobebe.fr/lit-bebe-evolutif-little-big-bed-70x140cm-joy-naturel-aSY063315251.html" target="_blank" rel="noopener noreferrer">Allobébé</a></td>
+          <td class="offert urgent" >Déja Offert!</td>
+        </tr>
+        <tr class="chambre" >
+          <td class="img" ><img src="img/matelas bébé.jpg" alt="Matelas bébé"></td>
+          <td class="product">Matelas bébé</td>
+          <td class="description" >Couchage évolutif selon l'age de votre enfant
+            Une face 1er âge en mousse densifié 16kg/m³ pour les bébés de moins de 10 kg.
+            Une face 2ème âge en latex micro perforée densité 65kg/m³ pour les bébés de plus de 10 kg </td>
+            <td class="seller" ><a href="http://https://www.allobebe.fr/matelas-bebe-evolutif-dehoussable-70-x-140-cm-aCA068240834.html" target="_blank" rel="noopener noreferrer">Allobébé</a></td>
+            <td class="offert normal" >Déja Offert!</td>
+          </tr>
+        <!-- POUR SES REPAS -->
+        <tr class="repas" >
+          <td class="img" ><img src="img/biberons - Copie.jpg" alt="biberons"></td>
+          <td class="product" >Lot de biberons</td>
+          <td class="cat" rowspan="2" >Pour ses repas</td>
+          <td class="description" >Lot de 4 biberons Adapté pour l’allaitement mixte : La tétine physiologique reproduit la forme du sein pendant la têtée,</td>
+          <td class="seller" > <a href="http://https://www.allobebe.fr/coffret-frist-choice-cristal-4-biberons-1-goupillon-1-sucette-garcon-aNF052305712.html" target="_blank" rel="noopener noreferrer">Allobébé</a></td>
+          <td><button class="dispo normal" type="submit" >Dispo</button></td>
+        </tr>
+        <tr class="repas" >   
+          <td class="img" ><img src="img/chauffe biberon.jpg" alt="Chauffe biberons"></td>
+          <td class="product" >1 chauffe biberon</td>
+          <td class="description" >Chauffe biberon rapide chauffe en 60 secondes!</td>
+          <td class="seller" ><a href="http://https://www.allobebe.fr/chauffe-biberon-express-60-sec-maisonvoiture-aNF054121180.html" target="_blank" rel="noopener noreferrer">Allobébé</a></td>
+          <td><button class="dispo normal" type="submit" >Dispo</button></td>
+        </tr>
+        <!-- POUR SON SOMMEIl -->
+        <tr class="sommeil" >
+          <td class="img" ><img src="img/Body.jpg" alt="Body"></td>
+          <td class="product" >Body</td>
+          <td class="cat" rowspan="2">Pour son sommeil</td>
+          <td class="description" >Lot de 2 bodies aux couleurs mixtes</td>
+          <td class="seller" ><a href="http://https://www.allobebe.fr/lot-de-2-bodies-elephant-aNX121072298.html" target="_blank" rel="noopener noreferrer">Allobébé</a></td>
+          <td class="offert urgent" >Déja Offert!</td>
+        </tr>
+        <tr class="sommeil" >
+          <td class="img"><img src="img/Gigoteuse.jpg" alt="Gigoteuse"></td>
+          <td class="product" >Pyjamas/Gigoteuses</td>
+          <td class="description" >Cette gigoteuse nomade permet d'emmener bébé partout sans le réveiller, s'intalle facilement dans le siège auto grâce à son système de séparation pour les jambes !</td>
+          <td class="seller" ><a href="http://https://www.allobebe.fr/gigoteuse-groloudoux-70-cm-arona-aAM067638060.html" target="_blank" rel="noopener noreferrer">Allobébé</a></td>
+          <td><button class="dispo urgent" type="submit" >Dispo</button></td>
+        </tr>
+      </table>  
+       <div class="lien" ><a href="formulaire.html" target="_blank" rel="noopener noreferrer">Bloquez votre choix!</a></div>
+      </main>
+    
+    <footer class="bot" >
+      <aside>Copyright © Pierre Lebret </aside>
+    </footer>
+  </body>
+</html>
